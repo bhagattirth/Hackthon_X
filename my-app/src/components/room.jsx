@@ -2,28 +2,29 @@ import React, { Component } from 'react';
 import "../furniture/furniture.css"
 import "../floorplans/floorplans.css"
 class Room extends Component {
-    state = {  } 
+    state = {objects: []} 
+    constructor(props) {
+      super(props);
+      this.handleDrop = this.handleDrop.bind(this);
+      this.props.dropHandlerSetter(this.handleDrop);
+    }
 
-    handleDragLeave = event => {
-        event.stopPropogation()
-        event.preventDefault()
-      };
-      handleDragOver = event => {
-        event.stopPropogation()
-        event.preventDefault()
-      };
-      handleDragEnter = event => {
-        event.stopPropogation()
-        event.preventDefault()
-      };
-      handleDrop = event => {
-        event.preventDefault()
-      };
+    handleDrop(event){
+      let newObjects = this.state.objects;
+      newObjects.push(<div className='bed' key = {"key" + this.state.objects.length}></div>);
+      this.setState((prevState, props)=>{
+        return {objects: newObjects};
+      });
+      console.log(this.state.objects.length);
+    }
 
     render() { 
         return (
             <div className = {"grid"} > 
-                <div className='floor' onDragOver={this.handleDragOver} onDragEnter={this.handleDragEnter} onDragExit={this.handleDragExit}></div>               
+              <div className='floor'> </div> 
+              <div>
+              {this.state.objects}              
+              </div>
             </div>
         );
     }
