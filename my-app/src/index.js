@@ -5,12 +5,11 @@ import SideNavigation from './components/sidenav';
 import Room from './components/room';
 import InfoContainer from './components/infoContainer';
 // import {DndContext} from '@dnd-kit/core';
-// import {Draggable} from './components/draggable';
+
 
 ReactDOM.render(
     <div>
     <InfoContainer></InfoContainer>
-    {/* <DragAndDrop /> */}
     <Room></Room><SideNavigation />
     </div>, 
 
