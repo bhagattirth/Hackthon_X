@@ -5,11 +5,9 @@ import Furniture from './furniture';
 
 class SideNavigation extends Component {
     state = { room: 'roomInfo' }; 
-
     constructor(props){
         super(props);
     }
-
 
     toggleButtons(toggle){
         Array.from(document.getElementsByClassName("navbutton")).forEach(e => {
@@ -57,6 +55,7 @@ class SideNavigation extends Component {
                 />
 
                     {this.state.room === "furniture" && <Furniture dropTriggerrer = {this.props.dropTriggerrer}></Furniture>}
+
                     {this.state.room === "roomInfo" && <Dimensions></Dimensions>}
                 
             </nav>

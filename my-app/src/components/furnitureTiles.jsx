@@ -12,7 +12,6 @@ class FurnitureCard extends Component {
       return true;
     }
     render() { 
-
         const styles = {
             aspectRatio: '1/1',
             width: 100,
@@ -25,8 +24,6 @@ class FurnitureCard extends Component {
             alignItems: 'center',
             justifyContent: 'center'
         }
-    
-
         return (
             <div>
                 <div style={{display: "flex",flexDirection: "column", alignItems: "center"}}><div style={styles}><div className='bed' draggable onDragEnd={this.dropEnd}></div></div>bed</div>
