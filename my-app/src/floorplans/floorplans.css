@@ -1,0 +1,6 @@
+.floor{
+    width: 500px;
+    height: 500px;
+    background-image: url("../floorplans/melville-basement-double-room.svg");
+    background-repeat: no-repeat;
+}

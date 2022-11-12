@@ -27,7 +27,7 @@ class SideNavigation extends Component {
 
     styles = {
         height: '100%',
-        position: 'absolute',
+        position: 'fixed',
         zIndex: 1,
         top: 0,
         right: 0,

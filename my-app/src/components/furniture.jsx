@@ -7,10 +7,7 @@ class Furniture extends Component {
             
         }
         return (
-            <div className="" style={styles}>
-                <FurnitureCard></FurnitureCard>
-                <FurnitureCard></FurnitureCard>
-                <FurnitureCard></FurnitureCard>
+            <div style={styles}>
                 <FurnitureCard></FurnitureCard>
                 <FurnitureCard></FurnitureCard>
             </div>
