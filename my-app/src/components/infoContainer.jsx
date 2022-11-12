@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import Modal from './dropdownModal';
+
 class InfoContainer extends Component {
     state = {  } 
+
+    openModal(){
+        document.getElementById("myModal").style.display = 'block';
+        document.getElementById("myModal").style.opacity = '1';
+    }
+    
     render() { 
         const styles = {
             width: '250px',
@@ -15,11 +23,14 @@ class InfoContainer extends Component {
             flexDirection: 'column'
         }
         return (
-            <div style={styles}>
-                <h4>My Room</h4>
-                <hr></hr>
-                <button className='btn btn-primary btn-sm w-75 mx-auto'>Save My Creation</button>
-                <button className='mx-auto btn btn-secondary btn-sm txt-primary cursor-pointer mt-auto txt-sm'>Choose another floorplan</button>
+            <div>
+                <div style={styles}>
+                    <h4>My Room</h4>
+                    <hr></hr>
+                    <button className='btn btn-primary btn-sm w-75 mx-auto'>Save My Creation</button>
+                    <button className='mx-auto btn btn-secondary btn-sm txt-primary cursor-pointer mt-auto txt-sm' onClick={this.openModal}>Choose another floorplan</button>
+                </div>
+                <Modal/>
             </div>
         );
     }
