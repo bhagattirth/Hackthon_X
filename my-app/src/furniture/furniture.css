@@ -1,5 +1,32 @@
 .bed{
     aspect-ratio: 75/38;
-    background-color: gray;
+    /* background-color: gray; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 100%;
+    background-image: url("../furniture/bed.svg");
+}
+
+.desk{
+    aspect-ratio: 75/38;
+    /* background-color: gray; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    background-image: url("../furniture/desk.svg");
+}
+
+.grid{
+    width: 1000px;
+    height: 1000px;
+    background-image: url("../floorplans/f6vGv.png");
+    background-size: 500px;
+    min-width: 140%;
+    min-height: 140%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
 }
