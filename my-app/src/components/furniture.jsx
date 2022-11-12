@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import FurnitureCard from './furnitureTiles';
 class Furniture extends Component {
     state = {  }
-
     constructor(props){
         super(props);
     }

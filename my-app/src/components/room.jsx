@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "../furniture/furniture.css"
 import "../floorplans/floorplans.css"
 class Room extends Component {
+
     state = {objects: []} 
     constructor(props) {
       super(props);

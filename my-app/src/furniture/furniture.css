@@ -19,7 +19,8 @@
 .grid{
     width: 1000px;
     height: 1000px;
-
+    background-image: url("../floorplans/f6vGv.png");
+    background-size: 500px;
     min-width: 140%;
     min-height: 140%;
     padding: 100px;
