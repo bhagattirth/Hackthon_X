@@ -22,7 +22,7 @@ class FurnitureCard extends Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
         }
         return (
             <div>

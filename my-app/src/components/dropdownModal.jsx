@@ -7,7 +7,7 @@ class Modal extends Component {
         setTimeout(() => {document.getElementById("myModal").style.display = 'none'},500)
     }
 
-    halls = [Crabtree,Dwight,Hamlin,Leach,Mary,Lyon,Knowlton,Johnson,Lewis,Thatcher,Butterfield,Gorman,Van Meter,Wheeler,Baker,Brett,Brooks,Chadbourne,Greenough,Brown,Sylvan,McNamara,Dickinson,Field,Grayson,Webster,Cance,Coolidge,Crampton,Emerson,James,John Adams,John Quincy Adam,Kennedy,MacKimmie,Melville,Moore,Patterson,Pierpont,Prince,Thoreau,Washington]
+    // halls = [Crabtree,Dwight,Hamlin,Leach,Mary,Lyon,Knowlton,Johnson,Lewis,Thatcher,Butterfield,Gorman,Van Meter,Wheeler,Baker,Brett,Brooks,Chadbourne,Greenough,Brown,Sylvan,McNamara,Dickinson,Field,Grayson,Webster,Cance,Coolidge,Crampton,Emerson,James,John Adams,John Quincy Adam,Kennedy,MacKimmie,Melville,Moore,Patterson,Pierpont,Prince,Thoreau,Washington]
     
     render() { 
         const transitionStyle = {
