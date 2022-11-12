@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import FurnitureCard from './furnitureTiles';
 class Furniture extends Component {
-    state = {  } 
+    state = {  }
     render() { 
+        const styles = {
+            
+        }
         return (
-            <div className="container">
-            <div className="row">
-                <div className="col">Bed</div>
-                <div className="col">Desk</div>
-                <div className="w-100"></div>
-                <div className="col">Nightstand</div>
-                <div className="col">Idk</div>
-            </div>
+            <div className="" style={styles}>
+                <FurnitureCard></FurnitureCard>
+                <FurnitureCard></FurnitureCard>
+                <FurnitureCard></FurnitureCard>
+                <FurnitureCard></FurnitureCard>
+                <FurnitureCard></FurnitureCard>
             </div>
         );
     }

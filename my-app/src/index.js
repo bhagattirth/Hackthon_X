@@ -9,7 +9,9 @@ const element = <h1>Hello World</h1>
 console.log(element);
 
 ReactDOM.render(
-    <div><Modal></Modal><SideNavigation /></div>, 
+    <div>
+        <img src={""} alt="Your SVG" />
+    <Modal></Modal><SideNavigation /></div>, 
 
     document.getElementById('root')
 );

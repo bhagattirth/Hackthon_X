@@ -6,18 +6,22 @@ import Furniture from './furniture';
 class SideNavigation extends Component {
     state = { room: 'roomInfo' }; 
 
+
     toggleButtons(toggle){
         Array.from(document.getElementsByClassName("navbutton")).forEach(e => {
             if(e.id === toggle){
                 e.classList.add("btn-primary")
                 e.classList.remove("text-dark")  
                 e.classList.add("text-light")  
-                document.getElementById("cont").render(<Furniture></Furniture>)
             }
             else{
                 e.classList.remove("btn-primary")
                 e.classList.add("text-dark")  
             }
+
+            this.setState({room: toggle});
+
+            console.log(this.state)
         });
     }
 
@@ -28,8 +32,11 @@ class SideNavigation extends Component {
         top: 0,
         right: 0,
         boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
-        padding: 10
+        padding: 10,
+        minWidth: '300px'
     }
+
+
 
     render() { 
         return (
@@ -45,10 +52,8 @@ class SideNavigation extends Component {
                     }}
                 />
 
-                <div id='cont'>
-                    {/* <Furniture></Furniture>
-                    <Dimensions></Dimensions> */}
-                </div>
+                    {this.state.room === "furniture" && <Furniture></Furniture>}
+                    {this.state.room === "roomInfo" && <Dimensions></Dimensions>}
                 
             </nav>
         );
