@@ -16,10 +16,9 @@
     background-image: url("../furniture/desk.svg");
 }
 
-.grid{
+#grid{
     width: 1000px;
     height: 1000px;
-    background-image: url("../floorplans/f6vGv.png");
     background-size: 500px;
     min-width: 140%;
     min-height: 140%;
@@ -29,4 +28,46 @@
     justify-content: center;
     top: 50%;
     left: 50%;
+    background-color: white;
+}
+
+body{
+    background: url("../floorplans/f6vGv.png");
+    background-color: rgba(0,0,0,0);
+}
+
+.bg-1{
+    background-color: #212121
+}
+
+.logo-top-header{
+    background: url("../dormmaker.png");
+    background-size: 220px;
+    background-repeat: no-repeat;
+    border: none;
+    width: 260px;
+    left: 24px;
+    height: 50px;
+}
+
+.btn-pink{
+    background: #FF00FF;
+    color: white
+}
+
+.btn-pink:hover{
+    background: purple;
+    color: white;
+}
+
+.txt-skyblue{
+    color: #71B4F7
+}
+
+.txt-skyblue:hover{
+    color: #71B4F7;
+}
+
+.text-muted:hover{
+    color: white;
 }

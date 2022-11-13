@@ -1,18 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import SideNavigation from './components/sidenav';
-import Room from './components/room';
-import InfoContainer from './components/infoContainer';
-// import {DndContext} from '@dnd-kit/core';
-
+import Main from './components/main';
 
 ReactDOM.render(
-    <div>
-    <InfoContainer></InfoContainer>
-    <Room></Room><SideNavigation />
-    </div>, 
-
+    <div><Main></Main></div>, 
     document.getElementById('root')
 );
 
