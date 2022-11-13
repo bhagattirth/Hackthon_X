@@ -23,7 +23,6 @@ class SideNavigation extends Component {
 
             this.setState({room: toggle});
 
-            console.log(this.state)
         });
     }
 

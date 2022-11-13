@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class Dimensions extends Component {
     state = {  } 
 
@@ -16,7 +17,9 @@ class Dimensions extends Component {
 
         for(let i = 0;i<elems.length;++i){
             elems[i].addEventListener("click",
-            // TODO FINISH THIS PART
+                function(){
+                    document.getElementById("dropdownMenuButton").innerHTML = elems[i].innerHTML;
+                }
             )
         }
     }
@@ -30,6 +33,7 @@ class Dimensions extends Component {
                         <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={() => document.getElementById("dropdown-menu").style.display === "block"?document.getElementById("dropdown-menu").style.display = "none":document.getElementById("dropdown-menu").style.display = "block"}>
                             Choose a Room
+                            {this.setEventListeners()}
                         </button>
 
                         <div id = "dropdown-menu" class="dropdown-menu" style={{height: "200px",overflowY: "scroll"}} aria-labelledby="dropdownMenuButton">

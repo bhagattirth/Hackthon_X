@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Main from './components/main';
 
 ReactDOM.render(
-    <div><Main></Main></div>, 
+    <Main></Main>, 
     document.getElementById('root')
 );
 
