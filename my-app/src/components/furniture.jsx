@@ -11,6 +11,8 @@ class Furniture extends Component {
         }
         return (
             <div style={styles}>
+                <h5>Drag to Add</h5>
+                <hr></hr>
                 <FurnitureCard dropTriggerrer = {this.props.dropTriggerrer}></FurnitureCard>
                 <FurnitureCard dropTriggerrer = {this.props.dropTriggerrer}></FurnitureCard>
             </div>
