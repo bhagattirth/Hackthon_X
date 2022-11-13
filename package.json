@@ -5,5 +5,7 @@
     "bootstrap": "^5.2.2",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1"
-  }
+  },
+  "engines": { "node": "16.13.0",
+  "npm": "8.1.0"}
 }
