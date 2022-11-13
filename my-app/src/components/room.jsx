@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import "../furniture/furniture.css"
 import "../floorplans/floorplans.css"
+import Floor_SVG from './floor_SVG';
 
 class Room extends Component {
 
-    state = {objects: []} 
     constructor(props) {
       super(props);
+
+      this.state = {svg_objects: [<Floor_SVG x="0" y="0" dropHandlerSetter={this.props.dropHandlerSetter}></Floor_SVG>]}
+
       this.changeVal = this.changeVal.bind(this);
       let newObjects = this.state.objects;
       newObjects.push( 
@@ -71,6 +74,7 @@ class Room extends Component {
         return {objects: newObjects};
       });
       console.log(this.state.objects.length);
+
     }
 
     
@@ -2353,12 +2357,16 @@ brettHall(props) {
     render() { 
       
         return (
+
+               this.state.svg_objects
+
           <div>
             <div className = {"grid"} id="grid" > 
                {this.changeVal()}
                {this.state.objects}
             </div>
           </div>
+
         );
     }
 }
