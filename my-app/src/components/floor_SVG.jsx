@@ -20,10 +20,12 @@ class Floor_SVG extends Component {
         };
     }
 
-    handleDrop(event){
-        let mousePos = this.get_mouse_pos(this.canvasRef.current, event)
+    handleDrop(obj){
+        let evento = obj.event;
+        console.log(obj.name);
+        let mousePos = this.get_mouse_pos(this.canvasRef.current, evento)
         let newObjects = this.state.svg_objects;
-        newObjects.push(<g transform-box="fill-box" transform-origin="center"><Item_SVG parentRef={this.canvasRef} x={mousePos.x} y={mousePos.y}></Item_SVG></g>);
+        newObjects.push(<g transform-box="fill-box" transform-origin="center"><Item_SVG type={obj.name} parentRef={this.canvasRef} x={mousePos.x} y={mousePos.y}></Item_SVG></g>);
         this.setState((prevState, props)=>{
           return {svg_objects: newObjects};
         });

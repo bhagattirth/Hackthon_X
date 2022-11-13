@@ -8,7 +8,7 @@ class FurnitureCard extends Component {
       this.dropEnd = this.dropEnd.bind(this);
     }
     dropEnd(event){
-      this.props.dropTriggerrer(event); 
+      this.props.dropTriggerrer({event: event, name: event.target.className}); 
       return true;
     }
     render() { 
@@ -27,7 +27,7 @@ class FurnitureCard extends Component {
         return (
             <div>
                 <div style={{display: "flex",flexDirection: "column", alignItems: "center"}}><div style={styles}><div className='bed' draggable onDragEnd={this.dropEnd}></div></div>bed</div>
-                <div style={{display: "flex",flexDirection: "column", alignItems: "center"}}><div style={styles}><div className='desk' draggable></div></div>desk</div>
+                <div style={{display: "flex",flexDirection: "column", alignItems: "center"}}><div style={styles}><div className='desk' draggable onDragEnd={this.dropEnd}></div></div>desk</div>
             </div>
         );
     }
