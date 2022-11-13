@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-
 class InfoContainer extends Component {
     state = {  } 
+    
     render() { 
+
+        const renderDropdown = () => {
+            document.getElementById("dropdown").style.display = 'block'
+            console.log("hello!rew")
+        }
+
         const styles = {
             backgroundColor: '#212121',
             zIndex: 2,
@@ -18,11 +24,14 @@ class InfoContainer extends Component {
             flexWrap: 'wrap'
         }   
         return (
-                <div style={styles}>
-                    <div class="logo-top-header" style={{flex: '0 33%'}}></div>
-                    <button onclick={this.renderDropdown} class=" bg-dark border-none text-light" style={{flex: '0 33%'}}>My Room 🠻</button>
-                    <button className='btn btn-pink btn-sm ml-auto d-flex align-items-center p-3' style={{ height: '50%', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;'}}>Save</button>
-                    {/* <button className='mx-auto btn btn-secondary btn-sm txt-primary cursor-pointer mt-auto txt-sm'>Choose another floorplan</button> */}
+                <div>
+                    <div style={styles}>
+                        <div class="logo-top-header"></div>
+                        {/* <button onClick={renderDropdown} class="bg-dark border-none text-light" style={{flex: '0 33%'}}>My Room 🠻</button> */}
+                        {/* <button className='btn btn-pink btn-sm ml-auto d-flex align-items-center p-3' style={{ height: '50%', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;'}}>Save</button> */}
+                    </div>
+                    <div id="dropdown" style={{background: "white", width: "80%", display: "none", height: "1000px",zIndex: 5,overflow: 'hidden'}}>
+                    </div>
                 </div>
         );
     }
