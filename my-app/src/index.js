@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './components/main';
-// import {DndContext} from '@dnd-kit/core';
-// import {Draggable} from './components/draggable';
+import Cards from './components/cards';
 
 ReactDOM.render(
-    <Main></Main>, 
-
+    <div><Cards></Cards><Main></Main></div>, 
     document.getElementById('root')
 );
 

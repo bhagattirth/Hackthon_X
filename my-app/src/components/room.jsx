@@ -66,7 +66,7 @@ class Room extends Component {
 
     render() { 
         return (
-            <div className = {"grid"} > 
+            <div className = {"grid"} id="grid" > 
                {this.state.objects}
             </div>
         );
